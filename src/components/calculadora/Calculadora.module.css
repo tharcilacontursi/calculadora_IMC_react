@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color: rgb(251, 244, 235);
+}
+
+body{
+    background-color: antiquewhite;
 }
 
 .container {
@@ -56,4 +59,19 @@ button{
 button:hover{
     background-color: rgb(110, 184, 210);
     cursor: pointer;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imcItem {
+    list-style: none;;
+    padding: 8px;
+}
+
+.containerList{
+    background-color: rgb(110, 184, 210);
+    border: 5px solid rgb(126, 123, 126);
 }
