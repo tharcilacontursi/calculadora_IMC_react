@@ -21,12 +21,29 @@ const Calculadora = () => {
         }
     };
 
+    const obterEstadoIMC = (imc) => {
+        if (imc < 18.5) {
+            return "você está abaixo do peso";
+        } else if (imc < 25) {
+            return "seu peso está normal";
+        } else if (imc < 30) {
+            return "você está com sobrepeso";
+        } else if (imc < 35) {
+            return "você está com obesidade grau I";
+        } else if (imc < 40) {
+            return "você está com obesidade grau II (severa)";
+        } else {
+            return "você está com obesidade grau III (mórbida)";
+        }
+    };
+
     const exibeIMC = () => {
         if (imc !== null) {
             const imcFormatado = imc.toFixed(1); //coloquei isso pra o resultado da divisao vir só com um número depois da vírula
             return (
                 <div>
                     <h2>Seu IMC é: {imcFormatado}</h2>
+                    {obterEstadoIMC(imc)}
                     <h4>Aqui está a tabela de classificação do IMC de acordo com a Organização Mundial da Saúde (OMS): </h4>
                     <div className={styles.containerList}>
                     <ul>

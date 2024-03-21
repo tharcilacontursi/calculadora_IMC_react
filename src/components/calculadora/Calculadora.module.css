@@ -61,6 +61,10 @@ button:hover{
     cursor: pointer;
 }
 
+h2{
+    margin-bottom: 10px;
+}
+
 h4 {
     margin-top: 20px;
     margin-bottom: 20px;
